@@ -1,0 +1,11 @@
+from OpenYiban import YiBanAPI
+token,id = YiBanAPI.get_access_token_and_user_id('....')
+print(token)
+print(id)
+s = YiBanAPI.get_user_info(access_token='....')
+print(s)
+ss = YiBanAPI.get_token_info(access_token='....')
+print(ss)
+a = YiBanAPI.revoke_token('....')
+print(a)
+print(YiBanAPI.CODE_URI)
